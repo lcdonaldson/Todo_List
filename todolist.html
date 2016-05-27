@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css"  href="#">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+  	$(document).ready(function(){
+      
+      //When you click the button...
+      $("#add").click(function(){
+        //...grab the value of 'myText' and put it in a variable
+        var textFieldValue = $('#myText').val();
+        //...then append the value inside <li> elements and insert it inside the <ul> element
+        $("#list").append('<li>'+textFieldValue+'</li>');
+      });
+
+    });	
+  </script>
+
+    <div>
+
+    <h2>To Do List</h2>
+
+    <input type="text" id="myText" value class="what do you need to do?">
+
+
+    <!-- This is where the list items will be inserted -->  
+        <ul id="list" style="overflow: scroll; 
+        max-height: 100px; min-height: 100px; 
+        max-width: 100px; border: 1px solid #EEEEEE;
+        margin-bottom: 0;">
+        </ul>
+        <p style='margin: 0 0 10px 30px; color: #A2A2A2; font-size: 10px;'>scroll down when box fills</p>
+        <button id='add'>Add</button> 
+
+    </div>
+	
+</body>
+</html>
