@@ -1,0 +1,14 @@
+#list {
+  overflow: scroll; 
+  max-height: 100px; 
+  min-height: 100px; 
+  max-width: 100px; 
+  border: 1px solid #EEEEEE;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0 0 10px 30px; 
+  color: #A2A2A2; 
+  font-size: 10px;
+}
