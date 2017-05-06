@@ -6,34 +6,30 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-  <script>
-  	$(document).ready(function(){
-      
-      //When you click the button...
-      $("#add").click(function(){
-        //...grab the value of 'myText' and put it in a variable
-        var textFieldValue = $('#myText').val();
-        //...then append the value inside <li> elements and insert it inside the <ul> element
-        $("#list").append('<li>'+textFieldValue+'</li>');
-      });
 
-    });	
-  </script>
+	<div>
+		<h2>To Do List</h2>
 
-    <div>
+		<input type="text" id="myText" value class="what do you need to do?">
+		
+		<!-- This is where the list items will be inserted -->  
+		<ul id="list"></ul>
+		<p>scroll down when box fills</p>
+		<button id='add'>Add</button> 
+	</div>
+	<script>
+	  $(document).ready(function(){
 
-    <h2>To Do List</h2>
+		//When you click the button...
+		$("#add").click(function(){
+			//...grab the value of 'myText' and put it in a variable
+			var textFieldValue = $('#myText').val();
+			//...then append the value inside <li> elements and insert it inside the <ul> element
+			$("#list").append('<li>'+textFieldValue+'</li>');
+		});
 
-    <input type="text" id="myText" value class="what do you need to do?">
-
-
-    <!-- This is where the list items will be inserted -->  
-        <ul id="list">
-        </ul>
-        <p>scroll down when box fills</p>
-        <button id='add'>Add</button> 
-
-    </div>
+	  });	
+	</script>
 	
 </body>
 </html>
