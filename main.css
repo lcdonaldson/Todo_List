@@ -12,3 +12,7 @@ p {
   color: #A2A2A2; 
   font-size: 10px;
 }
+
+input {
+  min-height: 2rem;
+}
