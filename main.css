@@ -16,4 +16,5 @@ p {
 input {
   min-height: 2rem;
   width: 100%;
+  border: 1px solid #CCC;
 }
