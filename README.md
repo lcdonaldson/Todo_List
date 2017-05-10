@@ -1,2 +1,2 @@
 # Todo_List
-Lazy todo list (mainly for practicing javascript) but also things like elm.
+Lazy todo list (mainly for practicing javascript) but also things like elm and firebug spin ups
