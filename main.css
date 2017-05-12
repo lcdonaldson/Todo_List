@@ -1,3 +1,8 @@
+body {
+  margin: 0rem;
+  padding: 0rem;
+}
+
 #list {
   overflow: scroll; 
   max-height: 9rem; 
