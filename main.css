@@ -29,3 +29,8 @@ input {
   border-radius: 4px; 
   background-color: red;
 }
+
+.add_btn {
+  border-radius: 4px; 
+  background-color: green;
+}
