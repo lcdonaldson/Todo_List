@@ -32,6 +32,14 @@
 		$("#remove").click(function(){
 			$("#list").html(' ');
 		});
+		 
+		// get api endpoint
+		const api = 'http://api.openweathermap.org/data/2.5/weather?';
+		const city = 'zip=72751,us';
+		const api_key = '&APPID=4a5bf1eb2a22106bac2d6d95c02695fb';
+		const units = '&units=imperial';
+		const url = api + city + api_key + units;
+		console.log(url); // this will return a 404 because api key is not real.
 
 	  });	
 	</script>
