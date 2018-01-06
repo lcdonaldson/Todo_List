@@ -20,26 +20,25 @@
 	</div>
 	<script>
 	  $(document).ready(function(){
-
-		//When you click the button...
-		$("#add").click(function(){
-			//...grab the value of 'myText' and put it in a variable
-			var textFieldValue = $('#myText').val();
-			//...then append the value inside <li> elements and insert it inside the <ul> element
-			$("#list").append('<li>' + textFieldValue + '</li>');
-		});
-
-		$("#remove").click(function(){
-			$("#list").html(' ');
-		});
-		 
-		// get api endpoint
+		  
+		// Get data through API call
 		const api = 'http://api.openweathermap.org/data/2.5/weather?';
 		const city = 'zip=72751,us';
 		const api_key = '&APPID=4a5bf1eb2a22106bac2d6d95c02695fb';
 		const units = '&units=imperial';
 		const url = api + city + api_key + units;
 		console.log(url); // this will return a 404 because api key is not real.
+
+		// Add list item in the input upon submission
+		$("#add").click(function(){
+			//...grab the value of 'myText' and put it in a variable
+			var textFieldValue = $('#myText').val();
+			//...then append the value inside <li> elements and insert it inside the <ul> element
+			$("#list").append('<li>' + textFieldValue + '</li>');
+		});
+		  
+		// Remove the list item
+		$("#remove").click(function(){ $("#list").html(' '); });
 
 	  });	
 	</script>
