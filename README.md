@@ -1,2 +1,2 @@
-# Todo_List
-This is a todo list repo (mainly for practicing javascript) but also things like elm and firebug spin ups.
+# Weather app
+This is a weather app I created from pulling data from the openweathermap.org api.
