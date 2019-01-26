@@ -1,5 +1,10 @@
 * {color: #fbf9f9; }
-.wrapper { background-color: #59cec9; border-radius: 3px; padding: 0.2rem; max-width: 400px; }
+.wrapper { 
+    background-color: #59cec9; 
+    border-radius: 3px; 
+    padding: 0.2rem; 
+    max-width: 25rem; 
+}
 li { list-style-type: none; margin: 0.2rem 0;}
 h2 { margin: 0.1rem 0.5rem; padding: 0; }
 label { margin-left: 0.5rem; }
