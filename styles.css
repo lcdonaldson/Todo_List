@@ -21,9 +21,9 @@ input {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #fbf9f9; }
-::-moz-placeholder { /* Firefox 19+ */ color: #fbf9f9; }
-:-ms-input-placeholder { /* IE 10+ */ color: #fbf9f9; }
-:-moz-placeholder { /* Firefox 18- */ color: #fbf9f9; }
+::-moz-placeholder { /* Firefox 19+ */ color: #FBF9F9; }
+:-ms-input-placeholder { /* IE 10+ */ color: #FBF9F9; }
+:-moz-placeholder { /* Firefox 18- */ color: #FBF9F9; }
 
 button {
     border: 2px solid #fbf9f9;
@@ -35,7 +35,7 @@ button {
     background-color: #59cec9;
     outline: none;
 }
-button:hover { background-color: #94e4e1; }
+button:hover { background-color: #94E4E1; }
 .buffer { padding: 0.8rem 0; }
 #blank { 
     padding: 0.5rem;
