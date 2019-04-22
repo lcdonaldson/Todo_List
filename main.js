@@ -17,7 +17,7 @@ function weatherHistory() {
     const api_key = '&APPID=3a5bf1eb2a22106bac2d6d95c02695fb';
     const units = '&units=imperial';
     const url = api + input + api_key + units;
-    console.log(url);   
+    // console.log(url);   
     get(url)
         .then((data) => {
             const x = JSON.parse(data);
