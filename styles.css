@@ -1,6 +1,10 @@
-* {color: #fbf9f9; }
+:root {
+  --primary: #FBF9F9; 
+}
+
+* {color: var(--primary); }
 .wrapper { 
-    background-color: #59cec9; 
+    background-color: #59CEC9; 
     border-radius: 3px; 
     padding: 0.2rem; 
     max-width: 25rem; 
@@ -20,13 +24,13 @@ input {
     font-size: 1em; 
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: #fbf9f9; }
-::-moz-placeholder { /* Firefox 19+ */ color: #FBF9F9; }
-:-ms-input-placeholder { /* IE 10+ */ color: #FBF9F9; }
-:-moz-placeholder { /* Firefox 18- */ color: #FBF9F9; }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */ color: var(--primary); }
+::-moz-placeholder { /* Firefox 19+ */ color: var(--primary); }
+:-ms-input-placeholder { /* IE 10+ */ color: var(--primary); }
+:-moz-placeholder { /* Firefox 18- */ color: var(--primary); }
 
 button {
-    border: 2px solid #fbf9f9;
+    border: 2px solid var(--primary);
     border-radius: 1rem;
     padding: 0.2rem 0.5rem;
     padding-bottom: 0.3rem;
