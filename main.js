@@ -16,8 +16,7 @@ function weatherHistory() {
     const input = 'zip=' + city + ',us';
     const api_key = '&APPID=3a5bf1eb2a22106bac2d6d95c02695fb';
     const units = '&units=imperial';
-    const url = api + input + api_key + units;
-    // console.log(url);   
+    const url = `${api} ${input} ${api_key} ${units}`;   
     get(url)
         .then((data) => {
             const x = JSON.parse(data);
@@ -26,12 +25,16 @@ function weatherHistory() {
             const min = x.main.temp_min;
             const humidity = x.main.humidity;
             const div = document.getElementById('blank');
-            const api_data = "<div><li> City of " + city + "</li></div><br/>"
-            + "<li> Min Temp: " + min + "</li>" + "<li> Max Temp: " + max + "</li>" + "<li>Humidity: " + humidity + "</li>"
+            const api_data = `<div>
+                                <li> City of ${city}</li>
+                              </div>
+                              <li> Min Temp: ${min} </li>
+                              <li> Max Temp: ${max} </li>
+                              <li>Humidity: ${humidity} </li>`
             div.innerHTML = api_data;
         })
         .catch((err) => {
-            console.log('Oops something went wrong, please try again');
+            return err;
         });
 }
 
