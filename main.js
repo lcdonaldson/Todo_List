@@ -26,7 +26,7 @@ function weatherHistory() {
             const humidity = x.main.humidity;
             const div = document.getElementById('blank');
             const api_data = `<div>
-                                <li> City of ${city}</li>
+                                <li> Closest Major City ${city}</li>
                               </div>
                               <li> Min Temp: ${min} </li>
                               <li> Max Temp: ${max} </li>
